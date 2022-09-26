@@ -11,6 +11,14 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <script defer src="./script.js"></script>
 
     <title>Frontend Mentor | Bookmark landing page</title>
   </head>
@@ -18,10 +26,10 @@
     <nav>
       <img src="./images/logo-bookmark.svg" alt="" />
       <ul>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
-        <li class="login-btn"><a href="#" class="login">Login</a></li>
+        <li><a href="#features">FEATURES</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="login-btn"><a href="#" class="login">LOGIN</a></li>
       </ul>
     </nav>
     <main>
@@ -44,7 +52,8 @@
         </div>
       </header>
       <article>
-        <section class="features">
+        <section id="features">
+          a
           <h3>Features</h3>
           <p>
             Our aim is to make it quick and easy for you to access your
@@ -102,8 +111,7 @@
             </div>
           </div>
         </section>
-
-        <section class="download-ext">
+        <section id="download-ext">
           <h3>Download the extension</h3>
           <p>
             We’ve got more browsers in the pipeline. Please do let us know if
@@ -133,7 +141,7 @@
             </div>
           </div>
         </section>
-        <section class="freq-questions">
+        <section id="freq-questions">
           <h3>Frequently Asked Questions</h3>
           <p>
             Here are some of our FAQs. If you have any other questions you’d
@@ -197,7 +205,7 @@
           </div>
           <button class="more-btn">More Info</button>
         </section>
-        <section class="contact">
+        <section id="contact">
           <p>35,000+ ALREADY JOINED</p>
           <h3>Stay up-to-date with what we’re doing</h3>
           <form action="#">
