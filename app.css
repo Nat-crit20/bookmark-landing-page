@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+nav img {
+  height: 1.5rem;
+  width: 9rem;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 400px;
+  justify-content: space-around;
+  align-items: center;
+}
+nav li {
+  margin: 1px;
+  width: 6rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav a {
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  font-size: 12px;
+  color: hsl(229, 31%, 21%);
+  cursor: pointer;
+}
+
+.login {
+  color: white;
+  width: 4.6rem;
+  line-height: 1.6rem;
+  text-align: center;
+  background-color: hsl(0, 94%, 66%);
+  border-radius: 5px;
+}
+
+nav .login:hover {
+  border: 1px solid hsl(0, 94%, 66%);
+  background-color: white;
+  color: hsl(0, 94%, 66%);
+}
+nav a:hover {
+  color: hsl(0, 94%, 66%);
+}
