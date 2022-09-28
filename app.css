@@ -2,6 +2,8 @@ body {
   margin: 0;
   font-family: "Rubik", sans-serif;
 }
+
+/* NavBar */
 nav {
   display: flex;
   justify-content: space-around;
@@ -21,7 +23,6 @@ nav ul {
 }
 nav li {
   margin: 1px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +54,8 @@ nav a:hover {
   color: hsl(0, 94%, 66%);
 }
 
+/* Header */
+
 header {
   display: flex;
   justify-content: center;
@@ -71,6 +74,7 @@ header {
 }
 .header-info p {
   color: hsl(229, 8%, 60%);
+  line-height: 1.6;
 }
 
 .header-btns button {
@@ -110,4 +114,82 @@ header {
   position: relative;
   bottom: 225px;
   left: 200px;
+}
+
+/* Features */
+#features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  text-align: center;
+}
+#features h3 {
+  color: hsl(229, 31%, 21%);
+  font-size: 2rem;
+  margin: 1rem;
+}
+#features p {
+  color: hsl(229, 8%, 60%);
+  width: 500px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+.tabs ul {
+  display: flex;
+  list-style-type: none;
+  width: 700px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+.tabs ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34%;
+  line-height: 70px;
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+#bookmark-tab {
+  border-bottom: 0.25rem solid hsl(0, 94%, 66%);
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+.tab {
+  display: flex;
+}
+.tab-design {
+  margin: 1rem;
+  width: 550px;
+}
+
+.tab-design img {
+  position: relative;
+  top: 50px;
+  width: 500px;
+  z-index: 1;
+}
+.tab-blue {
+  position: relative;
+  bottom: 200px;
+  right: 350px;
+}
+.tab-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.searching {
+  display: none;
+}
+.sharing {
+  display: none;
 }
