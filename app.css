@@ -104,7 +104,7 @@ header {
 
 .blue-design {
   width: 800px;
-  height: 300px;
+  height: 325px;
   background: hsl(231, 69%, 60%);
   border-radius: 250px;
   overflow: hidden;
@@ -125,12 +125,12 @@ header {
   margin-top: 7rem;
   text-align: center;
 }
-#features h3 {
+#features .features-head {
   color: hsl(229, 31%, 21%);
   font-size: 2rem;
   margin: 1rem;
 }
-#features p {
+#features .features-par {
   color: hsl(229, 8%, 60%);
   width: 500px;
   font-size: 1.05rem;
@@ -160,6 +160,8 @@ header {
   display: flex;
   flex-direction: row;
   height: 500px;
+  justify-content: space-around;
+  width: 90%;
 }
 .tab {
   display: flex;
@@ -172,12 +174,12 @@ header {
 .tab-design img {
   position: relative;
   top: 50px;
-  width: 500px;
+  width: 450px;
   z-index: 1;
 }
 .tab-blue {
   position: relative;
-  bottom: 200px;
+  bottom: 250px;
   right: 350px;
 }
 .tab-info {
@@ -186,10 +188,35 @@ header {
   justify-content: center;
   text-align: left;
 }
-
+.tab-info h3 {
+  font-size: 1.75rem;
+  margin: 0 0 1rem 0;
+}
+.tab-info p {
+  margin: 0;
+  width: 400px;
+  color: hsl(229, 8%, 60%);
+  line-height: 1.6;
+}
+.more-btn {
+  width: 6rem;
+  height: 2rem;
+  margin: 1.25rem 0;
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.bookmarking {
+  display: none;
+}
 .searching {
   display: none;
 }
 .sharing {
-  display: none;
+  display: contents;
+}
+/* Extentions */
+#download-ext {
+  margin-top: 3rem;
 }
