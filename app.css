@@ -21,8 +21,7 @@ nav ul {
 }
 nav li {
   margin: 1px;
-  width: 6rem;
-  height: 2rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,11 +36,12 @@ nav a {
 
 .login {
   color: white;
-  width: 4.6rem;
-  line-height: 1.6rem;
+  width: 6rem;
+  line-height: 2.25rem;
   text-align: center;
   background-color: hsl(0, 94%, 66%);
   border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 nav .login:hover {
@@ -51,4 +51,63 @@ nav .login:hover {
 }
 nav a:hover {
   color: hsl(0, 94%, 66%);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+}
+.header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 450px;
+  margin-left: 9rem;
+}
+.header-info h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.5rem;
+}
+.header-info p {
+  color: hsl(229, 8%, 60%);
+}
+
+.header-btns button {
+  border: none;
+  width: 10rem;
+  height: 2.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header-chrome-btn {
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  margin: 0 1rem 0 0;
+}
+
+.header-design {
+  margin: 2rem;
+  width: 550px;
+}
+
+.header-design img {
+  position: relative;
+  top: 50px;
+  width: 550px;
+  z-index: 1;
+}
+
+.blue-design {
+  width: 800px;
+  height: 300px;
+  background: hsl(231, 69%, 60%);
+  border-radius: 250px;
+  overflow: hidden;
+  z-index: -3;
+}
+.header-blue {
+  position: relative;
+  bottom: 225px;
+  left: 200px;
 }
