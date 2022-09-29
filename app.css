@@ -82,6 +82,8 @@ header {
   border: none;
   width: 10rem;
   height: 2.5rem;
+  border-radius: 5px;
+  cursor: pointer;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -154,6 +156,7 @@ header {
   width: 34%;
   line-height: 70px;
   border-bottom: 1px solid hsl(229, 8%, 60%);
+  cursor: pointer;
 }
 #bookmark-tab {
   border-bottom: 0.25rem solid hsl(0, 94%, 66%);
@@ -209,6 +212,8 @@ header {
   color: white;
   border: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .bookmarking {
   display: none;
@@ -330,4 +335,10 @@ header {
 .question img {
   width: 15px;
   height: 15px;
+}
+.question-container:last-of-type {
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+.answer {
+  display: none;
 }
