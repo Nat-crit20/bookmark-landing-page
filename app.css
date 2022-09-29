@@ -22,7 +22,6 @@ nav ul {
   align-items: center;
 }
 nav li {
-  margin: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,11 +41,11 @@ nav a {
   text-align: center;
   background-color: hsl(0, 94%, 66%);
   border-radius: 5px;
+  border: 1px solid hsl(0, 94%, 66%);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 nav .login:hover {
-  border: 1px solid hsl(0, 94%, 66%);
   background-color: white;
   color: hsl(0, 94%, 66%);
 }
@@ -59,7 +58,9 @@ nav a:hover {
 header {
   display: flex;
   justify-content: center;
-  height: 80vh;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
 }
 .header-info {
   display: flex;
@@ -93,13 +94,15 @@ header {
 .header-design {
   margin: 2rem;
   width: 550px;
+  max-width: 50%;
+  z-index: 1;
 }
 
 .header-design img {
   position: relative;
   top: 50px;
   width: 550px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .blue-design {
@@ -108,7 +111,7 @@ header {
   background: hsl(231, 69%, 60%);
   border-radius: 250px;
   overflow: hidden;
-  z-index: -3;
+  z-index: 1;
 }
 .header-blue {
   position: relative;
@@ -175,7 +178,7 @@ header {
   position: relative;
   top: 50px;
   width: 450px;
-  z-index: 1;
+  z-index: 2;
 }
 .tab-blue {
   position: relative;
@@ -219,4 +222,112 @@ header {
 /* Extentions */
 #download-ext {
   margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#download-ext h3 {
+  color: hsl(229, 31%, 21%);
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+#download-ext .download-par {
+  color: hsl(229, 8%, 60%);
+  width: 500px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 1rem 0;
+}
+.extensions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 65vh;
+}
+.card {
+  background-color: white;
+  width: 225px;
+  padding: 1rem 0;
+  margin: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card img:first-child {
+  width: 40%;
+}
+.card .dot-img {
+  width: 100%;
+}
+.extension-btn {
+  margin-top: 1rem;
+  width: 85%;
+  line-height: 2rem;
+  border: 1px solid hsl(231, 69%, 60%);
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.extension-btn:hover {
+  color: hsl(231, 69%, 60%);
+  background-color: white;
+}
+.card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 12px;
+  color: hsl(229, 8%, 60%);
+}
+.chrome-card {
+  align-self: flex-start;
+}
+.foxfire-card {
+  align-self: flex-center;
+}
+.opera-card {
+  align-self: flex-end;
+}
+
+/* Frequently ask question */
+#freq-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#freq-questions h3 {
+  color: hsl(229, 31%, 21%);
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+#freq-questions .freq-par {
+  color: hsl(229, 8%, 60%);
+  width: 500px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 1rem 0;
+}
+.question-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border-top: 1px solid hsl(229, 8%, 60%);
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.question img {
+  width: 15px;
+  height: 15px;
 }
