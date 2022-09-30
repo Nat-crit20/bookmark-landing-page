@@ -205,8 +205,8 @@ header {
   line-height: 1.6;
 }
 .more-btn {
-  width: 6rem;
-  height: 2rem;
+  width: 6.5rem;
+  height: 2.5rem;
   margin: 1.25rem 0;
   background-color: hsl(231, 69%, 60%);
   color: white;
@@ -341,4 +341,95 @@ header {
 }
 .answer {
   display: none;
+}
+
+/* contact */
+#contact {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(231, 69%, 60%);
+  height: 55vh;
+}
+#contact p {
+  color: white;
+  font-size: 11px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+#contact h3 {
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+  max-width: 400px;
+  font-weight: 400;
+  margin: 2rem;
+}
+#contact form {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+}
+#email {
+  width: 250px;
+  border: none;
+  background-color: white;
+  line-height: 2.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+#email::placeholder {
+  padding-left: 1rem;
+  opacity: 0.5;
+}
+.contact-btn {
+  width: 115px;
+  line-height: 2.5rem;
+  border: 1px solid hsl(0, 94%, 66%);
+  color: white;
+  background-color: hsl(0, 94%, 66%);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.contact-btn:hover {
+  background-color: white;
+  color: hsl(0, 94%, 66%);
+}
+/* footer */
+footer {
+  margin: 0;
+  height: 13vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(229, 31%, 21%);
+}
+footer div:first-of-type {
+  width: 500px;
+  display: flex;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  width: 300px;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+footer a {
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
+}
+.social-media {
+  width: 200px;
+  text-align: center;
+}
+.social-media img:first-of-type {
+  margin-right: 25px;
 }
