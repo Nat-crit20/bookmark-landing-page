@@ -215,14 +215,19 @@ header {
   border-radius: 5px;
   cursor: pointer;
 }
+.bookmarking .tab-design img {
+  margin: 3rem;
+  top: 00px;
+  width: 450px;
+}
 .bookmarking {
-  display: none;
+  display: contents;
 }
 .searching {
   display: none;
 }
 .sharing {
-  display: contents;
+  display: none;
 }
 /* Extentions */
 #download-ext {
