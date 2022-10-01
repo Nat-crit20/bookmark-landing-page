@@ -6,6 +6,11 @@ const bookmark = document.querySelector(".bookmarking");
 const searching = document.querySelector(".searching");
 const sharing = document.querySelector(".sharing");
 
+const question = document.querySelectorAll(".question-container");
+const activeAnswer = document.querySelector(".answer");
+
+//Functions
+
 function toggleContent(event) {
   const initBorder = `1px solid hsl(229, 8%, 60%)`;
   const redBorder = `0.25rem solid hsl(0, 94%, 66%)`;
@@ -42,6 +47,16 @@ function toggleContent(event) {
   }
 }
 
+//Event Listeners
+question.forEach((ask) => {
+  ask.addEventListener("click", function (e) {
+    if (ask.classList.contains("active")) {
+      ask.classList.remove("active");
+    } else {
+      ask.classList.add("active");
+    }
+  });
+});
 bookmarkTab.addEventListener("click", toggleContent);
 searchingTab.addEventListener("click", toggleContent);
 sharingTab.addEventListener("click", toggleContent);

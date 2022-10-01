@@ -328,6 +328,7 @@ header {
   flex-direction: column;
   width: 500px;
   border-top: 1px solid hsl(229, 8%, 60%);
+  cursor: pointer;
 }
 
 .question {
@@ -336,16 +337,24 @@ header {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-}
-.question img {
-  width: 15px;
-  height: 15px;
+  cursor: pointer;
 }
 .question-container:last-of-type {
   border-bottom: 1px solid hsl(229, 8%, 60%);
 }
+.question:hover {
+  color: red;
+}
 .answer {
   display: none;
+}
+.question-container.active .answer {
+  display: block;
+}
+.active .question img {
+  filter: invert(55%) sepia(39%) saturate(5864%) hue-rotate(327deg)
+    brightness(99%) contrast(100%);
+  transform: rotate(180deg);
 }
 
 /* contact */
