@@ -158,6 +158,9 @@ header {
   border-bottom: 1px solid hsl(229, 8%, 60%);
   cursor: pointer;
 }
+.tabs ul li:hover {
+  color: red;
+}
 #bookmark-tab {
   border-bottom: 0.25rem solid hsl(0, 94%, 66%);
 }
@@ -439,6 +442,9 @@ footer a {
   font-size: 12px;
   color: white;
   cursor: pointer;
+}
+footer a:hover {
+  color: hsl(0, 94%, 66%);
 }
 .social-media {
   width: 200px;
