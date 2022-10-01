@@ -89,7 +89,19 @@ header {
 
 .header-chrome-btn {
   background-color: hsl(231, 69%, 60%);
+  border: 2px solid hsl(231, 69%, 60%) !important;
   color: white;
+  margin: 0 1rem 0 0;
+}
+.header-chrome-btn:hover {
+  background-color: white;
+  color: hsl(231, 69%, 60%);
+}
+
+.header-firefox-btn:hover {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
   margin: 0 1rem 0 0;
 }
 
@@ -277,7 +289,7 @@ header {
   margin-top: 1rem;
   width: 85%;
   line-height: 2rem;
-  border: 1px solid hsl(231, 69%, 60%);
+  border: 2px solid hsl(231, 69%, 60%);
   background-color: hsl(231, 69%, 60%);
   color: white;
   cursor: pointer;
@@ -450,6 +462,12 @@ footer a:hover {
   width: 200px;
   text-align: center;
 }
+
 .social-media img:first-of-type {
   margin-right: 25px;
+}
+.social-media img:hover {
+  filter: invert(55%) sepia(39%) saturate(5864%) hue-rotate(327deg)
+    brightness(99%) contrast(100%);
+  cursor: pointer;
 }

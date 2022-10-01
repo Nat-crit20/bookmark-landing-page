@@ -9,8 +9,16 @@ const sharing = document.querySelector(".sharing");
 const question = document.querySelectorAll(".question-container");
 const activeAnswer = document.querySelector(".answer");
 
-//Functions
+const isEmail =
+  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
+//Functions
+function isValidEmail(email) {
+  if (!isEmail.test(email)) {
+    throw new Error("Whoops make sure it's an email");
+  }
+  return;
+}
 function toggleContent(event) {
   const initBorder = `1px solid hsl(229, 8%, 60%)`;
   const redBorder = `0.25rem solid hsl(0, 94%, 66%)`;
