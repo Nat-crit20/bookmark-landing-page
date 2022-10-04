@@ -441,8 +441,10 @@ header {
 .error-msg {
   letter-spacing: 1px !important;
   background-color: red;
-  height: 1.3rem;
-  border-radius: 5px;
+  width: 240px;
+  padding: 0.2rem 0.5rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   visibility: hidden;
   z-index: -1;
 }

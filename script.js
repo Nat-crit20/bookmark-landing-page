@@ -23,7 +23,7 @@ function toggleError(border, visible, msg = "") {
   email.style.border = border;
   errorMessage.style.visibility = visible;
   errorMessage.innerHTML = msg;
-  email.classList.add("isInValid");
+  //email.classList.add("isInValid");
   return;
 }
 
@@ -89,12 +89,14 @@ form.addEventListener("submit", function (e) {
       "visible",
       "Whoops! It looks like you forgot to add your email"
     );
+    email.classList.add("isInValid");
   } else if (checkEmail(emailData) === false) {
     toggleError(
       `2px solid red`,
       "visible",
       "Please provide a valid email address"
     );
+    email.classList.add("isInValid");
   } else {
     toggleError("2px solid white", "hidden");
   }
