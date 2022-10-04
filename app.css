@@ -58,6 +58,7 @@ nav a:hover {
 header {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   height: 100vh;
   overflow: hidden;
   z-index: 0;
@@ -403,18 +404,16 @@ header {
 }
 #email {
   width: 250px;
-  border: none;
   background-color: white;
   line-height: 2.5rem;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 5px;
 }
 #email::placeholder {
   padding-left: 1rem;
   opacity: 0.5;
 }
-#email.inVaild {
-  border: 2px solid red;
+.isInValid {
   background-image: url("./images/icon-error.svg");
   background-position: right;
   background-repeat: no-repeat;
@@ -422,6 +421,7 @@ header {
 .contact-btn {
   width: 115px;
   line-height: 2.5rem;
+  align-self: flex-start;
   border: 2px solid hsl(0, 94%, 66%);
   color: white;
   background-color: hsl(0, 94%, 66%);
@@ -432,6 +432,19 @@ header {
 .contact-btn:hover {
   background-color: white;
   color: hsl(0, 94%, 66%);
+}
+
+.error-icon {
+  position: absolute;
+  min-width: 30px;
+}
+.error-msg {
+  letter-spacing: 1px !important;
+  background-color: red;
+  height: 1.3rem;
+  border-radius: 5px;
+  visibility: hidden;
+  z-index: -1;
 }
 /* footer */
 footer {

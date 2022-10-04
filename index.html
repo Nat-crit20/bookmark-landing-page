@@ -218,12 +218,16 @@
           <p>35,000+ ALREADY JOINED</p>
           <h3>Stay up-to-date with what we’re doing</h3>
           <form action="#">
-            <input
-              id="email"
-              type="email"
-              placeholder="Enter your email address"
-            />
-            <button class="contact-btn">Contact Us</button>
+            <div class="error-box">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+              />
+              <p class="error-msg"></p>
+            </div>
+            <button type="submit" class="contact-btn">Contact Us</button>
           </form>
         </section>
       </article>
