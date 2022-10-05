@@ -114,7 +114,6 @@ header {
 .header-design {
   margin: 2rem;
   width: 550px;
-  max-width: 50%;
   z-index: 1;
 }
 
@@ -519,6 +518,13 @@ footer a:hover {
     padding: 2rem 0;
     display: flex;
     flex-direction: column-reverse;
+    width: 700px;
+  }
+  .header-design {
+    width: 700px;
+    margin: 0;
+  }
+  .header-design img {
     width: 700px;
   }
   .tabs ul {
