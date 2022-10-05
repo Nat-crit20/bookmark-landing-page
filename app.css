@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Rubik", sans-serif;
+  min-width: 700px;
 }
 
 /* NavBar */
@@ -52,6 +53,9 @@ nav .login:hover {
 nav a:hover {
   color: hsl(0, 94%, 66%);
 }
+.hamburger-icon {
+  display: none;
+}
 
 /* Header */
 
@@ -59,7 +63,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  height: 100vh;
+  min-height: 100vh;
+
   overflow: hidden;
   z-index: 0;
 }
@@ -492,4 +497,66 @@ footer a:hover {
   filter: invert(55%) sepia(39%) saturate(5864%) hue-rotate(327deg)
     brightness(99%) contrast(100%);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    min-width: 700px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav img {
+    height: 2rem;
+    width: 10rem;
+  }
+  .hamburger-icon {
+    display: block;
+    height: 1.5rem;
+    width: 2rem;
+  }
+  header {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 700px;
+  }
+  .tabs ul {
+    flex-direction: column;
+  }
+
+  .carousel {
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+  .extensions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200vh;
+  }
+  footer {
+    height: 70vh;
+    flex-direction: column;
+  }
+  footer div img:first-of-type {
+    height: 10vh;
+  }
+  footer div:first-of-type {
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+  }
+  footer ul {
+    padding: 0;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+  }
+  footer li a {
+    text-align: center;
+    font-size: 1.5rem;
+  }
 }
