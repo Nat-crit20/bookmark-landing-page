@@ -231,7 +231,7 @@ header {
   color: white;
   border: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 .bookmarking .tab-design img {
@@ -565,7 +565,7 @@ footer a:hover {
   }
   .tabs ul {
     flex-direction: column;
-    margin-bottom: 250px;
+    margin-bottom: 150px;
   }
   .tabs ul li {
     width: 90%;
@@ -577,6 +577,7 @@ footer a:hover {
   .carousel {
     flex-direction: column;
     margin-bottom: 10rem;
+    height: 800px;
   }
   .bookmarking .tab-design img {
     margin: 0;
@@ -595,6 +596,18 @@ footer a:hover {
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+  .tab-info h3 {
+    font-size: 3rem;
+  }
+  .tab-info p {
+    font-size: 2rem;
+    width: 95%;
+  }
+  .more-btn {
+    width: 11rem;
+    height: 5rem;
+    font-size: 1.5rem;
   }
   .extensions {
     display: flex;
