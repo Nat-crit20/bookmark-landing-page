@@ -497,7 +497,7 @@ footer a:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
   nav {
     padding: 2rem 0;
     width: 700px;
