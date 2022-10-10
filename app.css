@@ -499,7 +499,8 @@ footer a:hover {
 }
 
 .nav-box {
-  display: block;
+  display: none;
+  flex-direction: column;
   padding: 3.5rem 0;
   position: fixed;
   height: 100%;
@@ -525,33 +526,43 @@ footer a:hover {
   flex-direction: column;
   list-style-type: none;
   width: 100%;
-  margin: 2rem 0;
+  margin: 5rem 0 0 0;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   padding: 0;
 }
 .nav-box ul li {
   text-align: center;
-  line-height: 8rem;
   width: 80%;
   border-top: 2px solid hsl(229, 8%, 60%);
 }
+.nav-box ul li:last-of-type {
+  border-bottom: 2px solid hsl(229, 8%, 60%);
+}
+
 .nav-box a {
   font-family: "Rubik", sans-serif;
   text-decoration: none;
+  line-height: 8rem;
   font-size: 2.5rem;
   color: white;
   cursor: pointer;
   letter-spacing: 2px;
-  opacity: 1;
 }
 #nav-box-login {
+  text-align: center;
   border: 5px solid white;
-  width: 20px;
-  line-height: 60%;
+  width: 80%;
+  line-height: 5rem;
+  border-radius: 25px;
+  margin-top: 2rem;
+  align-self: center;
 }
-
+.nav-box .social-media {
+  margin-top: 50vh;
+  justify-self: end;
+  width: 100%;
+}
 @media only screen and (max-width: 600px) {
   nav {
     padding: 2rem 0;

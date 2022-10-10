@@ -2,7 +2,10 @@ const bookmarkTab = document.getElementById("bookmark-tab");
 const searchingTab = document.getElementById("searching-tab");
 const sharingTab = document.getElementById("sharing-tab");
 const email = document.getElementById("email");
-
+const hamburgerIcon = document.querySelector(".hamburger-icon");
+const closeIcon = document.querySelector(".close-img");
+const navPopUp = document.querySelector(".nav-box");
+const navBar = document.querySelector("nav");
 const form = document.querySelector("form");
 const bookmark = document.querySelector(".bookmarking");
 const searching = document.querySelector(".searching");
@@ -100,4 +103,13 @@ form.addEventListener("submit", function (e) {
   } else {
     toggleError("2px solid white", "hidden");
   }
+});
+
+hamburgerIcon.addEventListener("click", function () {
+  navBar.style.display = "none";
+  navPopUp.style.display = "flex";
+});
+closeIcon.addEventListener("click", function () {
+  navPopUp.style.display = "none";
+  navBar.style.display = "flex";
 });
