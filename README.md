@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://val7997.github.io/bookmark-landing-page/](https://val7997.github.io/bookmark-landing-page/)
+- Live Site URL: [https://Nat-crit20.github.io/bookmark-landing-page/](https://Nat-crit20.github.io/bookmark-landing-page/)
 
 ## My process
 
