@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-For this project I learned about how to get the first item out a div without having to give it a class. I also learned that if you what to perform email authentication on an empty string then you need to make sure that you do not have the input set to require.
+For this project, I learned about how to get the first item out of a div without having to give it a class. I also learned that if you want to perform email authentication on an empty string then you need to make sure that you do not have the input set to require.
 
 ```css
 .nav-box div:first-of-type {
@@ -57,8 +57,8 @@ For this project I learned about how to get the first item out a div without hav
 
 ### Continued development
 
-I would like to continue to learn more about formating webpaging, because I when sizing there is some overflow to the side of the page.
+I would like to continue to learn more about formatting webpaging because when sizing there is some overflow to the side of the page.
 
 ## Author
 
-- Frontend Mentor - [@Val7997](https://www.frontendmentor.io/profile/Val7997)
+- Frontend Mentor - [@Nat-crit20](https://www.frontendmentor.io/profile/Nat-crit20)
